@@ -1,4 +1,6 @@
 import 'package:calculator/calcute.dart';
+import 'package:calculator/ios_calculate.dart';
+import 'package:calculator/splash.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +13,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Calcutepage(),debugShowCheckedModeBanner: false,
+    return MaterialApp(home:Splashexp(),debugShowCheckedModeBanner: false,
      
     );
   }

@@ -39,8 +39,8 @@ class _CalcutepageState extends State<Calcutepage> {
       } else if (operator.contains("-")) {
         var parts = operator.split("-");
         result = double.parse(parts[0]) - double.parse(parts[1]);
-      } else if (operator.contains("*")) {
-        var parts = operator.split("*");
+      } else if (operator.contains("x")) {
+        var parts = operator.split("x");
         result = double.parse(parts[0]) * double.parse(parts[1]);
       } else if (operator.contains("÷")) {
         var parts = operator.split("÷");
@@ -80,7 +80,7 @@ class _CalcutepageState extends State<Calcutepage> {
       body: Column(
         children: [
           Expanded(
-            child: Container(
+            child: Container(color: Colors.white,
               alignment: Alignment.bottomRight,
               padding: EdgeInsets.all(20),
               child: Column(
@@ -95,7 +95,7 @@ class _CalcutepageState extends State<Calcutepage> {
                     output,
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 25,
+                      fontSize: 35,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -145,6 +145,7 @@ class _CalcutepageState extends State<Calcutepage> {
                   buildbutton("="),
                 ],
               ),
+              SizedBox(height: 45,)
             ],
           ),
         ],

@@ -129,6 +129,14 @@ class _IosCalculatorState extends State<IosCalculator> {
                 ],
               ),
               SizedBox(height: 8),
+               Row(
+                children: [
+                  buildbut("4"),
+                  buildbut("5"),
+                  buildbut("6"),
+                  buildbut("-"),
+                ],
+              ),    SizedBox(height: 8),
               Row(
                 children: [
                   buildbut("1"),

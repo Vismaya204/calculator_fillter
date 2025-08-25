@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class Calcutepage extends StatefulWidget {
   const Calcutepage({super.key});
 
+
   @override
   State<Calcutepage> createState() => _CalcutepageState();
 }
@@ -29,7 +30,6 @@ class _CalcutepageState extends State<Calcutepage> {
       }
     });
   }
-
   String calculation(String operator) {
     try {
       double result = 0.0;
